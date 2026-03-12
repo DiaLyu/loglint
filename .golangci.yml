@@ -1,0 +1,10 @@
+linters-settings:
+  custom:
+    loglint:
+      path: ./loglint.so
+      description: custom log linter
+      original-url: https://github.com/DiaLyu/loglint.git
+
+linters:
+  enable:
+    - loglint

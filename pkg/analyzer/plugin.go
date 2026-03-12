@@ -1,12 +1,13 @@
-package analyzer 
+package analyzer
 
-import "golang.org/x/tools/go/analysis" 
+import "golang.org/x/tools/go/analysis"
 
-// Для golangci-lint плагина 
-type analyzerPlugin struct{} 
+type AnalyzerPlugin struct{}
 
-func (s *analyzerPlugin) GetAnalyzers() []*analysis.Analyzer { 
-	return []*analysis.Analyzer{ Analyzer, } 
-} 
+func (AnalyzerPlugin) GetAnalyzers() []*analysis.Analyzer {
+	return []*analysis.Analyzer{
+		Analyzer,
+	}
+}
 
-var AnalyzerPlugin analyzerPlugin
+var Plugin AnalyzerPlugin
