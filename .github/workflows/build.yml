@@ -15,4 +15,4 @@ jobs:
 
       - run: go test ./...
 
-      - run: go build -buildmode=plugin -o loglint.so ./pkg/analyzer
+      - run: go build -buildmode=plugin -o loglint.so ./cmd/plugin
